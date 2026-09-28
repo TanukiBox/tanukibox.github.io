@@ -33,3 +33,6 @@ steam: { url: 'https://store.steampowered.com/app/番号/', wishlist: true },
 
 ## 公開
 Settings → Pages → Source を **Deploy from a branch**、Branch を **main** / **(root)** にする。main に push すると自動で更新される。
+
+## 更新がスマホに出ないとき
+ブラウザが前のファイルを覚えていることがある。`style.css` / `site.js` / `games.js` / 画像を書きかえたら、`index.html` の `?v=3` の数字を1つ上げる（`?v=4` など）。
