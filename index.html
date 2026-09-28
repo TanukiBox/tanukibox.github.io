@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tanuki Box｜ブラウザですぐ遊べる無料ミニゲーム</title>
-<meta name="description" content="Tanuki Box は、スマホでもPCでもブラウザですぐ遊べる無料のミニゲームを作っています。インストールも登録もいりません。">
-<meta name="theme-color" content="#f3cf8e">
+<title>Tanuki Box｜たぬきのゲーム箱屋さん</title>
+<meta name="description" content="Tanuki Box は、スマホでもPCでもブラウザですぐ遊べる無料のゲームを箱につめてならべている、たぬきのゲーム屋さんです。インストールも登録もいりません。">
+<meta name="theme-color" content="#9fd9ea">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tanuki Box">
-<meta property="og:title" content="Tanuki Box｜ブラウザですぐ遊べる無料ミニゲーム">
-<meta property="og:description" content="スマホでもPCでも、インストールなしですぐ遊べる無料のミニゲーム。">
+<meta property="og:title" content="Tanuki Box｜たぬきのゲーム箱屋さん">
+<meta property="og:description" content="スマホでもPCでも、インストールなしですぐ遊べる無料のゲーム。">
 <meta property="og:url" content="https://tanukibox.github.io/">
 <meta property="og:image" content="https://tanukibox.github.io/assets/ogp.png">
 <meta property="og:image:width" content="1200">
@@ -21,181 +21,64 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Mochiy+Pop+One&display=swap">
-<style>
-  :root {
-    --ink: #4a2d1a;
-    --cream: #fff6e2;
-    --sand: #f3cf8e;
-    --sand-dark: #e3ae63;
-    --sand-deep: #c98c4a;
-    --sky: #bfe6ee;
-    --sky-top: #9fd9ea;
-    --accent: #ff8a3d;
-    --accent-deep: #c85e23;
-    --good: #ffcf3f;
-    --green: #6cc06b;
-    --radius: 24px;
-    --line: 4px;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--sand);
-    color: var(--ink);
-    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Arial Rounded MT Bold", system-ui, sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
-  }
-  /* 言語の切りかえ：data-lang に合わない方を隠す */
-  html[data-lang="ja"] [lang="en"], html[data-lang="en"] [lang="ja"] { display: none !important; }
-  a { color: inherit; }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
-
-  /* ---- ヘッダー ---- */
-  header {
-    background: linear-gradient(var(--sky-top), var(--sky));
-    padding-top: env(safe-area-inset-top);
-  }
-  .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0; }
-  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .brand img { width: 52px; height: 52px; }
-  .brand span { font-family: "Mochiy Pop One", sans-serif; font-size: 26px; letter-spacing: 0.02em; }
-  .lang {
-    font: inherit; font-weight: 800; font-size: 14px; color: var(--ink);
-    background: var(--cream); border: 3px solid var(--ink); border-radius: 999px;
-    padding: 6px 14px; cursor: pointer; box-shadow: 0 3px 0 var(--sand-deep);
-  }
-  .lang:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--sand-deep); }
-
-  /* ---- はじめの大きな見出し（砂丘と太陽） ---- */
-  .hero { position: relative; overflow: hidden; }
-  .hero .wrap { position: relative; z-index: 1; padding-top: 28px; padding-bottom: 96px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: center; }
-  .hero h1 { font-family: "Mochiy Pop One", sans-serif; font-weight: 400; font-size: clamp(30px, 6vw, 52px); line-height: 1.25; margin: 0 0 14px; }
-  .hero h1 em { font-style: normal; color: var(--accent); }
-  .hero p { margin: 0; font-size: 17px; max-width: 34em; }
-  .hero-logo { justify-self: center; width: min(260px, 60vw); filter: drop-shadow(0 8px 0 rgba(74, 45, 26, 0.18)); animation: bob 3.2s ease-in-out infinite; }
-  @keyframes bob { 50% { transform: translateY(-8px) rotate(-2deg); } }
-  .sun { position: absolute; right: 8%; top: 18px; width: 120px; height: 120px; border-radius: 50%; background: #ffd66b; border: 5px solid #f0a94a; box-shadow: 0 0 0 26px rgba(255, 236, 170, 0.45); }
-  .dunes { position: absolute; left: 0; bottom: -2px; width: 100%; height: 110px; display: block; }
-  @media (prefers-reduced-motion: reduce) { .hero-logo { animation: none; } }
-
-  /* ---- ゲームの一覧 ---- */
-  main { padding: 8px 0 40px; }
-  h2 { font-family: "Mochiy Pop One", sans-serif; font-weight: 400; font-size: 26px; margin: 12px 0 18px; display: flex; align-items: center; gap: 10px; }
-  h2::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--ink); }
-  .games { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 22px; }
-  .card {
-    background: var(--cream); border: var(--line) solid var(--ink); border-radius: var(--radius);
-    box-shadow: 0 7px 0 var(--sand-deep); overflow: hidden; display: flex; flex-direction: column;
-  }
-  .card .thumb { display: block; aspect-ratio: 1200 / 630; border-bottom: var(--line) solid var(--ink); background: var(--sky); }
-  .card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .card .body { padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
-  .card h3 { margin: 0; font-family: "Mochiy Pop One", sans-serif; font-weight: 400; font-size: 24px; line-height: 1.2; }
-  .card h3 small { display: block; font-family: "M PLUS Rounded 1c", sans-serif; font-weight: 800; font-size: 14px; color: var(--sand-deep); margin-top: 4px; }
-  .card p { margin: 0; }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-  .tags li { font-size: 13px; font-weight: 800; background: #fff; border: 2px solid var(--ink); border-radius: 999px; padding: 1px 10px; }
-  .play {
-    margin-top: auto; align-self: flex-start; text-decoration: none;
-    font-weight: 800; font-size: 20px; color: #fff; background: var(--accent);
-    border: var(--line) solid var(--ink); border-radius: 18px; padding: 8px 26px;
-    box-shadow: 0 5px 0 var(--accent-deep); text-shadow: 0 2px 0 rgba(74, 45, 26, 0.35);
-    transition: transform 0.08s, box-shadow 0.08s;
-  }
-  .play:hover { transform: translateY(-1px); }
-  .play:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--accent-deep); }
-  .play:focus-visible, .lang:focus-visible, .brand:focus-visible { outline: 4px solid var(--good); outline-offset: 3px; }
-  .card.soon { background: rgba(255, 246, 226, 0.55); border-style: dashed; box-shadow: none; align-items: center; justify-content: center; text-align: center; min-height: 260px; padding: 24px; gap: 8px; }
-  .card.soon img { width: 96px; opacity: 0.55; filter: grayscale(0.4); }
-  .card.soon p { font-weight: 800; color: var(--sand-deep); }
-
-  /* ---- Tanuki Box について ---- */
-  .about { margin-top: 44px; }
-  .points { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
-  .point { background: var(--cream); border: 3px solid var(--ink); border-radius: 20px; padding: 14px 16px; display: flex; gap: 12px; align-items: flex-start; }
-  .point .ic { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 3px solid var(--ink); display: grid; place-items: center; font-weight: 800; font-size: 20px; }
-  .point b { display: block; font-size: 17px; }
-  .point span { font-size: 14px; }
-  .note { font-size: 14px; margin-top: 16px; opacity: 0.85; }
-
-  footer { background: var(--sand-dark); border-top: var(--line) solid var(--ink); padding: 18px 0 calc(18px + env(safe-area-inset-bottom)); font-size: 14px; font-weight: 800; text-align: center; }
-
-  @media (max-width: 680px) {
-    .hero .wrap { grid-template-columns: 1fr; text-align: center; padding-bottom: 80px; }
-    .hero p { margin: 0 auto; }
-    .hero-logo { order: -1; width: 170px; }
-    .sun { width: 80px; height: 80px; right: 6%; box-shadow: 0 0 0 16px rgba(255, 236, 170, 0.45); }
-    .brand span { font-size: 22px; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="wrap bar">
-    <a class="brand" href="./" aria-label="Tanuki Box">
-      <img src="assets/tanuki.svg" alt="" width="52" height="52">
-      <span>Tanuki Box</span>
+
+<!-- ===== お店の正面（日よけ・看板・カウンターのたぬき） ===== -->
+<header class="shop">
+  <div class="awning" aria-hidden="true"></div>
+  <button class="lang" type="button" id="lang" aria-label="Language">
+    <span lang="ja">English</span><span lang="en">日本語</span>
+  </button>
+  <div class="sun" aria-hidden="true"></div>
+
+  <h1 class="sign">
+    <a href="./">
+      <span class="sign-name">Tanuki Box</span>
+      <span class="sign-sub"><span lang="ja">ゲームの箱屋さん</span><span lang="en">Game Box Shop</span></span>
     </a>
-    <button class="lang" type="button" id="lang" aria-label="Language">
-      <span lang="ja">English</span><span lang="en">日本語</span>
-    </button>
-  </div>
-  <section class="hero">
-    <div class="sun" aria-hidden="true"></div>
-    <div class="wrap">
-      <div>
-        <h1 lang="ja">片手で、<em>ちょっと</em><br>遊べるゲーム。</h1>
-        <h1 lang="en">Tiny games,<br><em>one tap</em> away.</h1>
-        <p lang="ja">Tanuki Box は、スマホでもPCでもブラウザですぐ遊べる、無料のミニゲームを作っています。インストールも会員登録もいりません。</p>
-        <p lang="en">Tanuki Box makes free mini games you can play right in your browser, on phone or PC. No install, no sign-up.</p>
-      </div>
-      <img class="hero-logo" src="assets/tanuki.svg" alt="" width="260" height="260">
+  </h1>
+
+  <div class="wrap stage">
+    <img class="keeper" src="assets/tanuki.svg" alt="" width="150" height="150">
+    <div class="bubble">
+      <p class="bubble-hi" lang="ja">いらっしゃい！<br>どの箱であそぶ？</p>
+      <p class="bubble-hi" lang="en">Welcome in!<br>Which box will you open?</p>
+      <p class="bubble-sub" lang="ja">ブラウザですぐ遊べる無料ゲームを、箱につめてならべています。インストールも登録もいりません。</p>
+      <p class="bubble-sub" lang="en">Free games you can play right in your browser, packed in boxes. No install, no sign-up.</p>
     </div>
-    <svg class="dunes" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 60 Q150 20 300 50 T600 45 T900 40 T1200 55 V110 H0 Z" fill="#eec892"/>
-      <path d="M0 80 Q200 50 420 75 T820 70 T1200 78 V110 H0 Z" fill="#f3cf8e"/>
-      <path d="M0 80 Q200 50 420 75 T820 70 T1200 78" fill="none" stroke="#4a2d1a" stroke-width="4" vector-effect="non-scaling-stroke"/>
-    </svg>
-  </section>
+  </div>
+  <svg class="dunes" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40 Q150 8 320 30 T640 26 T960 20 T1200 32 V60 H0 Z" fill="#eec892"/>
+  </svg>
+  <div class="counter" aria-hidden="true"></div>
 </header>
 
-<main class="wrap">
-  <h2><span lang="ja">ゲーム</span><span lang="en">Games</span></h2>
-  <div class="games">
-    <!-- ゲームを増やすときは、この article をまるごとコピーして中身を書きかえる -->
-    <article class="card">
-      <a class="thumb" href="DUST-DASH/" tabindex="-1" aria-hidden="true">
-        <img lang="ja" src="assets/games/dust-dash.png" alt="" loading="lazy" width="1200" height="630">
-        <img lang="en" src="assets/games/dust-dash-en.png" alt="" loading="lazy" width="1200" height="630">
-      </a>
-      <div class="body">
-        <h3>DUST DASH<small lang="ja">砂けむりダッシュ</small><small lang="en">Desert one-tap runner</small></h3>
-        <p lang="ja">獲物を上から踏んで食べて加速！ 追ってくるタカから逃げきる、片手でタップするだけのランナーゲーム。全10ステージとエンドレスモード。</p>
-        <p lang="en">Stomp prey to speed up and outrun the hawk in this one-tap runner. 10 stages plus an endless mode.</p>
-        <ul class="tags">
-          <li lang="ja">無料</li><li lang="en">Free</li>
-          <li lang="ja">スマホ・PC</li><li lang="en">Phone &amp; PC</li>
-          <li lang="ja">片手でタップ</li><li lang="en">One tap</li>
-        </ul>
-        <a class="play" href="DUST-DASH/"><span lang="ja">あそぶ ▶</span><span lang="en">PLAY ▶</span></a>
+<main>
+  <!-- いちおし（games.js で featured: true の1本） -->
+  <section class="wrap feat-wrap" aria-label="Featured">
+    <div id="featured" class="featured" hidden></div>
+  </section>
+
+  <!-- 箱の棚 -->
+  <section class="wrap" aria-labelledby="shelf-h">
+    <h2 id="shelf-h"><span lang="ja">箱の棚</span><span lang="en">The Shelf</span></h2>
+    <div id="tabs" class="tabs" role="tablist" aria-label="Filter"></div>
+    <div class="cabinet">
+      <div id="shelf" class="shelf" role="tabpanel">
+        <noscript><p class="empty"><a href="DUST-DASH/">DUST DASH ▶</a></p></noscript>
       </div>
-    </article>
-
-    <div class="card soon" aria-label="Coming soon">
-      <img src="assets/tanuki.svg" alt="" width="96" height="96">
-      <p lang="ja">つぎのゲームを準備中…</p>
-      <p lang="en">Next game in the works…</p>
     </div>
-  </div>
+  </section>
 
-  <section class="about">
-    <h2><span lang="ja">Tanuki Box について</span><span lang="en">About Tanuki Box</span></h2>
+  <!-- Tanuki Box について -->
+  <section class="wrap about" aria-labelledby="about-h">
+    <h2 id="about-h"><span lang="ja">このお店について</span><span lang="en">About the shop</span></h2>
     <div class="points">
       <div class="point"><div class="ic" style="background: var(--good)">¥0</div>
         <div><b lang="ja">ずっと無料</b><b lang="en">Always free</b>
-        <span lang="ja">お金はかかりません。</span><span lang="en">No payment, ever.</span></div></div>
+        <span lang="ja">ブラウザ版はお金がかかりません。</span><span lang="en">Browser games cost nothing.</span></div></div>
       <div class="point"><div class="ic" style="background: var(--sky)">▶</div>
         <div><b lang="ja">すぐ遊べる</b><b lang="en">Play instantly</b>
         <span lang="ja">インストールも会員登録もなし。</span><span lang="en">No install, no account.</span></div></div>
@@ -209,24 +92,13 @@
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Tanuki Box</div>
+  <div class="wrap">
+    <img src="assets/tanuki.svg" alt="" width="36" height="36">
+    <span>© 2026 Tanuki Box</span>
+  </div>
 </footer>
 
-<script>
-  // 言語：?lang=en / 前にえらんだ言語 / ブラウザの言語 の順に決める
-  (function () {
-    var root = document.documentElement, btn = document.getElementById('lang');
-    function saved() { try { return localStorage.getItem('tb-lang'); } catch (e) { return null; } }
-    function set(l) {
-      root.setAttribute('data-lang', l);
-      root.lang = l;
-      try { localStorage.setItem('tb-lang', l); } catch (e) { /* 保存できなくても表示は切りかえる */ }
-    }
-    var q = /[?&]lang=(ja|en)/.exec(location.search);
-    var nav = (navigator.language || 'en').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en';
-    set(q ? q[1] : saved() || nav);
-    btn.addEventListener('click', function () { set(root.getAttribute('data-lang') === 'ja' ? 'en' : 'ja'); });
-  })();
-</script>
+<script src="games.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
