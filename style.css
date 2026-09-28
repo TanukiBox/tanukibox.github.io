@@ -101,7 +101,7 @@ h2::before {
 
 /* カウンターの上のたぬきと、ふきだし */
 .stage { position: relative; z-index: 2; display: flex; align-items: flex-end; justify-content: center; gap: 18px; padding-top: 18px; }
-.keeper { flex: none; width: 150px; height: auto; display: block; margin-bottom: -6px; animation: bob 3.2s ease-in-out infinite; transform-origin: 50% 100%; }
+.keeper { flex: none; width: 170px; height: auto; display: block; margin-bottom: -12px; animation: bob 3.2s ease-in-out infinite; transform-origin: 50% 100%; }
 @keyframes bob { 50% { transform: translateY(-5px) rotate(-2deg); } }
 .bubble {
   position: relative; align-self: center; max-width: 440px; margin-bottom: 26px;
@@ -223,7 +223,7 @@ main { padding: 34px 0 44px; }
 }
 .gbox-title { display: block; font-family: var(--pop); font-size: 22px; line-height: 1.2; text-align: center; margin: 10px 0 4px; }
 .gbox-brand { display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 800; opacity: 0.7; }
-.gbox-brand img { width: 20px; height: 20px; }
+.gbox-brand img { width: 22px; height: 22px; }
 .stamp {
   position: absolute; right: -10px; top: -14px; z-index: 2; width: 58px; height: 58px; border-radius: 50%;
   display: grid; place-items: center; font-weight: 800; font-size: 14px; line-height: 1; color: var(--red);
@@ -297,7 +297,7 @@ footer .wrap { display: flex; align-items: center; justify-content: center; gap:
   .sign a { padding: 8px 18px 10px; }
   .sign-sub { font-size: 13px; }
   .stage { gap: 12px; padding-top: 14px; }
-  .keeper { width: 104px; }
+  .keeper { width: 118px; margin-bottom: -8px; }
   .bubble { padding: 10px 12px 12px; margin-bottom: 18px; }
   .bubble-sub { font-size: 12.5px; }
   h2 { font-size: 23px; }

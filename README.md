@@ -9,9 +9,9 @@
 | `games.js` | **ゲームの一覧**。ここを書きかえると、棚の箱が変わる |
 | `site.js` | 一覧を箱にしてならべる・絞りこみのタブ・映像の再生・日本語/英語の切りかえ |
 | `style.css` | 見た目 |
-| `assets/tanuki.svg` | Tanuki Box のロゴ（箱から顔を出すたぬき） |
+| `assets/tanuki.png` / `assets/tanuki-96.png` | Tanuki Box のたぬき（背景なし。X のプロフィール画像から作ったもの） |
 | `assets/ogp.png` | X などにリンクを貼ったときの画像（1200×630） |
-| `assets/favicon.png` / `assets/icon-180.png` | ブラウザのタブ・スマホのホーム画面のアイコン |
+| `assets/favicon.png` / `assets/icon-180.png` / `assets/icon-512.png` | ブラウザのタブ・スマホのホーム画面のアイコン |
 | `assets/games/` | ゲームごとの絵（1200×630）・プレイ映像（mp4）・映像の最初の絵（jpg） |
 
 ## ゲームを増やすとき

@@ -77,7 +77,7 @@
           '<span class="gbox-face">' +
             '<span class="win">' + windowMedia(g) + '</span>' +
             '<span class="gbox-title">' + esc(g.title) + '</span>' +
-            '<span class="gbox-brand" aria-hidden="true"><img src="assets/tanuki.svg" alt="">Tanuki Box</span>' +
+            '<span class="gbox-brand" aria-hidden="true"><img src="assets/tanuki-96.png" alt="">Tanuki Box</span>' +
             (soon ? '<span class="tape" aria-hidden="true"></span>' : '<span class="stamp" aria-hidden="true">' + t('free') + '</span>') +
             (g.isNew ? '<span class="ribbon" aria-hidden="true">' + t('isNew') + '</span>' : '') +
           '</span>' +
