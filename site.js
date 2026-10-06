@@ -108,7 +108,8 @@
     function text() { return box.getAttribute('data-text-' + lang()) || box.getAttribute('data-text-ja'); }
     var x = box.querySelector('[data-share-x]');
     if (x) x.addEventListener('click', function () {
-      var u = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text()) + '&url=' + encodeURIComponent(url);
+      var via = box.getAttribute('data-via');
+      var u = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text()) + '&url=' + encodeURIComponent(url) + (via ? '&via=' + encodeURIComponent(via) : '');
       window.open(u, '_blank', 'noopener');
     });
     var nat = box.querySelector('[data-share-native]');

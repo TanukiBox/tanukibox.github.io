@@ -6,6 +6,6 @@ window.TB_SITE = {
   url: 'https://tanukibox.github.io',
   // X（旧Twitter）のプロフィールの住所と名前。null のあいだは、X のボタンを出さない
   // 例：x: 'https://x.com/tanukibox', xName: '@tanukibox'
-  x: null,
-  xName: null
+  x: 'https://x.com/tanukiboxgames',
+  xName: '@tanukiboxgames'
 };

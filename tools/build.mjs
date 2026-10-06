@@ -160,7 +160,7 @@ const miniHeader = (cur) => `<header class="shop mini">
 
 function footer() {
   const xLink = SITE.x
-    ? `<li><a href="${esc(SITE.x)}" target="_blank" rel="noopener">${ICON.x}X${SITE.xName ? ' ' + esc(SITE.xName) : ''}</a></li>`
+    ? `<li><a href="${esc(SITE.x)}" target="_blank" rel="noopener">${ICON.x}${SITE.xName ? esc(SITE.xName) : 'X'}</a></li>`
     : '';
   return `<footer class="site-foot">
   <div class="wrap foot-in">
@@ -444,7 +444,7 @@ ${miniHeader('')}
       ${bi(g.desc, 'p')}
       ${chips(g)}
       <div class="btns">${playBtn(g, true)}${steamBtn(g, true)}</div>
-      <div class="share" data-share data-url="${esc(full(url))}" data-text-ja="${esc(shareText.ja)}" data-text-en="${esc(shareText.en)}">
+      <div class="share" data-share data-url="${esc(full(url))}" data-text-ja="${esc(shareText.ja)}" data-text-en="${esc(shareText.en)}"${SITE.xName ? ` data-via="${esc(SITE.xName.replace(/^@/, ''))}"` : ''}>
         <button type="button" class="btn-mini" data-share-x>${ICON.x}${bi({ ja: 'ポストする', en: 'Post' })}</button>
         <button type="button" class="btn-mini" data-share-native hidden>${ICON.share}${bi({ ja: 'シェア', en: 'Share' })}</button>
         <button type="button" class="btn-mini" data-copy>${ICON.link}<span data-copy-label>${bi({ ja: 'リンクをコピー', en: 'Copy link' })}</span></button>
