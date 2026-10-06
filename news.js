@@ -6,6 +6,12 @@
 window.TB_NEWS = [
   {
     date: '2026-10-06',
+    ja: 'DUST DASH の遊ぶ場所が新しくなりました。前の住所を開いても、記録（コイン・強化・最高記録）を引きついで、新しい場所へ案内します。',
+    en: 'DUST DASH has a new home. The old address still works and brings your records (coins, upgrades, best runs) along.',
+    link: '/games/dust-dash/'
+  },
+  {
+    date: '2026-10-06',
     ja: 'お店をリニューアルしました。ゲームごとの紹介ページ（遊び方・画面写真・更新の記録）ができました。',
     en: 'The shop got a makeover! Every game now has its own page with how to play, screenshots and updates.',
     link: '/games/dust-dash/'

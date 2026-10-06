@@ -24,6 +24,7 @@
 | `index.html` ほか | **道具が作ったページ**（トップ、`games/○○/`、`news/`、`about/`、`privacy/`、`404.html`、`sitemap.xml`、`robots.txt`） |
 | `assets/tanuki.webp` ほか | Tanuki Box のたぬき（X のプロフィール画像から作ったもの）・アイコン・X などに貼ったときの画像（`ogp.png`） |
 | `assets/games/` | ゲームごとの絵（1200×630）・プレイ映像（mp4）・画面写真（`○○/名前.webp` と、小さい `名前-s.webp`） |
+| `DUST-DASH/` | DUST DASH の前の公開場所（GitHub Pages）。新しい場所（https://dust-dash.pages.dev/ ）へ、記録を引きついで案内する。`sw.js` は、ホーム画面に追加していた人の端末に残った古い「オフライン用の係」を片づける |
 
 ## ゲームを増やすとき
 1. ゲームは TanukiBox の中に別のリポジトリとして作る。

@@ -12,7 +12,7 @@
  *   ★sub:  { ja: '砂けむりダッシュ', en: '…' },  // 箱の下の小さな名前
  *   genre: { ja: 'ランナー', en: 'Runner' },     // 棚の札に出るジャンル
  *   ★desc: { ja: '…', en: '…' },             // 短い説明（2〜3行）
- *   play: '/DUST-DASH/',                      // ブラウザ版の場所（ほかのサイトなら https:// から。ないときは null）
+ *   play: 'https://dust-dash.pages.dev/',     // ブラウザ版の場所（ほかのサイトなら https:// から。ないときは null）
  *   steam: null,                              // Steam 版ができたら { url: 'https://store.steampowered.com/app/番号/', wishlist: true }
  *   released: '2026-09-28',                   // 公開した日
  *   video: 'assets/games/dust-dash.mp4',      // 箱の窓で流れるプレイ映像（6秒くらい・640×360・音なし）
@@ -46,7 +46,7 @@ window.TB_GAMES = [
       ja: '獲物を上から踏んで食べて加速！ 追ってくるタカから逃げきる、片手でタップするだけのランナーゲーム。全10ステージとエンドレスモード。',
       en: 'Stomp prey to speed up and outrun the hawk in this one-tap runner. 10 stages plus an endless mode.'
     },
-    play: '/DUST-DASH/',
+    play: 'https://dust-dash.pages.dev/',
     steam: null,
     released: '2026-09-28',
     video: 'assets/games/dust-dash.mp4',
@@ -117,6 +117,7 @@ window.TB_GAMES = [
       { src: 'assets/games/dust-dash/oasis', alt: { ja: '夜明けのオアシス', en: 'Dawn oasis' } }
     ],
     updates: [
+      { date: '2026-10-06', ja: '遊ぶ場所が https://dust-dash.pages.dev/ に引っこしました。前の住所を開くと、記録（コイン・強化・最高記録）を引きついで案内します。', en: 'DUST DASH moved to https://dust-dash.pages.dev/. Opening the old address takes you there with your records (coins, upgrades, best runs).' },
       { date: '2026-09-29', ja: 'ホーム画面に追加すると、アプリのように開けて、電波がなくても遊べるようになりました。', en: 'Add it to your home screen to play like an app — even offline.' },
       { date: '2026-09-29', ja: 'みんなのランキング・一時停止・自分のベスト記録の旗・結果画面のコツを追加しました。', en: 'Added global rankings, pause, a best-distance flag and tips on the result screen.' },
       { date: '2026-09-28', ja: '公開しました。', en: 'Released.' }
