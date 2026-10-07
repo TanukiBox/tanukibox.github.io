@@ -49,6 +49,7 @@ window.TB_GAMES = [
     play: 'https://nom-nom-slime.pages.dev/',
     steam: null,
     released: '2026-10-07',
+    video: 'assets/games/nom-nom-slime.mp4',
     poster: 'assets/games/nom-nom-slime-poster.webp',
     art: { ja: 'assets/games/nom-nom-slime.webp', en: 'assets/games/nom-nom-slime.webp' },
     ogp: { ja: 'assets/games/nom-nom-slime.png', en: 'assets/games/nom-nom-slime.png' },
