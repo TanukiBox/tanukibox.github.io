@@ -141,6 +141,7 @@
         e.preventDefault();
         img.src = a.getAttribute('href');
         img.alt = (a.querySelector('img') || {}).alt || '';
+        lb.classList.toggle('tall-shot', !!a.closest('.shots.tall'));
         lb.showModal();
       });
     });

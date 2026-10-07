@@ -35,10 +35,92 @@
  */
 window.TB_GAMES = [
   {
-    id: 'dust-dash',
+    id: 'nom-nom-slime',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'NOM NOM SLIME',
+    sub: { ja: 'ぱくぱくスライム', en: 'Eat-everything slime' },
+    genre: { ja: '育成', en: 'Idle growth' },
+    desc: {
+      ja: 'パンくずから銀河まで、なんでも食べて大きくなる！ 机の上から町、地球、そして宇宙へ。食べた物で色も変わる、スライム育成ゲーム。',
+      en: 'Eat everything, from breadcrumbs to galaxies! Grow from a desk to a town, Earth and outer space. Your slime changes color with what it eats.'
+    },
+    play: 'https://nom-nom-slime.pages.dev/',
+    steam: null,
+    released: '2026-10-07',
+    poster: 'assets/games/nom-nom-slime-poster.webp',
+    art: { ja: 'assets/games/nom-nom-slime.webp', en: 'assets/games/nom-nom-slime.webp' },
+    ogp: { ja: 'assets/games/nom-nom-slime.png', en: 'assets/games/nom-nom-slime.png' },
+    box: '#bfe8c9',
+    time: { ja: 'すきま時間に', en: 'Play in short bursts' },
+    control: { ja: '片手でなぞる', en: 'One-finger swipe' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '机の上に生まれた小さなスライム。パンくず、消しゴムのカス、クッキーのかけら…目の前のものを、ぱくぱく食べて大きくなります。',
+        '大きくなるほど、食べられるものも大きくなる。部屋、家、町、都市、国、地球、そして宇宙へ。最後は銀河まで食べられるかな？ ゲームを閉じている間も、少しずつ大きくなります。'
+      ],
+      en: [
+        'A tiny slime is born on a desk. Breadcrumbs, eraser crumbs, cookie bits — it eats whatever is in front of it and grows.',
+        'The bigger it gets, the bigger the things it can eat: a room, a house, a town, a city, a country, Earth and outer space. Can it eat a galaxy? It keeps growing a little even while the game is closed.'
+      ]
+    },
+    features: {
+      ja: [
+        '指でなぞるだけ。押したまま止めていると、近くの物を自動で食べる',
+        '机の上から宇宙まで、24のエリア。くらべる物で、今の大きさがわかる',
+        '食べた物で見た目が変わる（食べ物・布・植物・金属…そして虹色）',
+        'ゼリーで5種類の強化。ためるとフィーバー、ときどき「おかしの雨」も',
+        '分裂して遺伝子をためる「やり直し」で、どんどん速く育つ。図鑑と実績つき'
+      ],
+      en: [
+        'Just swipe. Hold still and your slime eats everything nearby',
+        '24 areas from a desk to outer space, with size comparisons as you grow',
+        'Your look changes with what you eat — food, cloth, plants, metal… even rainbow',
+        '5 upgrades with jelly, fever time, and the occasional candy shower',
+        'Split to collect genes and grow faster each run. Collection book and achievements'
+      ]
+    },
+    howto: {
+      ja: [
+        '食べ物をタップすると、スライムがそこまで行って食べる。',
+        '押したまま左右になぞると、指を追いかけて次々に食べる。押したまま止めると、近くの物を自動で食べる。',
+        'スライムより小さい物だけ食べられる。大きくなると、次のエリアへ進む。',
+        'たまったゼリーで、下のカードの強化を買う（長押しで説明）。',
+        '町まで来たら「分裂」できる。遺伝子をもらって、机の上からもう一度。前より速く大きくなる。'
+      ],
+      en: [
+        'Tap something to eat it — your slime goes right to it.',
+        'Hold and swipe left and right to chase food. Hold still to eat everything nearby.',
+        'You can only eat things smaller than you. Grow big enough to move to the next area.',
+        'Spend jelly on the upgrade cards at the bottom (long-press for details).',
+        'Once you reach the town, you can split: get genes and start over from the desk, growing faster than before.'
+      ]
+    },
+    controls: [
+      { what: { ja: '食べる', en: 'Eat' }, phone: { ja: 'タップ', en: 'Tap' }, pc: { ja: 'クリック', en: 'Click' } },
+      { what: { ja: '追いかけて食べる', en: 'Chase food' }, phone: { ja: '押したまま左右になぞる', en: 'Hold and swipe' }, pc: { ja: 'ドラッグ・← → キー', en: 'Drag / ← → keys' } },
+      { what: { ja: '近くを自動で食べる', en: 'Auto-eat nearby' }, phone: { ja: '押したまま止める', en: 'Hold still' }, pc: { ja: '押したまま止める', en: 'Hold still' } },
+      { what: { ja: '強化の説明', en: 'Upgrade details' }, phone: { ja: 'カードを長押し', en: 'Long-press a card' }, pc: { ja: 'カードを長押し', en: 'Long-press a card' } }
+    ],
+    shotsTall: true,
+    shots: [
+      { src: 'assets/games/nom-nom-slime/desk', alt: { ja: '勉強机', en: 'Study desk' } },
+      { src: 'assets/games/nom-nom-slime/town', alt: { ja: '商店街', en: 'Shopping street' } },
+      { src: 'assets/games/nom-nom-slime/mountain', alt: { ja: '山', en: 'Mountains' } },
+      { src: 'assets/games/nom-nom-slime/earth', alt: { ja: '大陸', en: 'Continent' } },
+      { src: 'assets/games/nom-nom-slime/moon', alt: { ja: '月', en: 'The Moon' } },
+      { src: 'assets/games/nom-nom-slime/galaxy', alt: { ja: '銀河', en: 'Galaxy' } }
+    ],
+    updates: [
+      { date: '2026-10-07', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'dust-dash',
+    status: 'out',
     title: 'DUST DASH',
     sub: { ja: '砂けむりダッシュ', en: 'Desert one-tap runner' },
     genre: { ja: 'ランナー', en: 'Runner' },

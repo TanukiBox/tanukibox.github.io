@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-07',
+    ja: '2つめの箱「ぱくぱくスライム」をならべました！ パンくずから銀河まで、なんでも食べて大きくなるスライム育成ゲームです。',
+    en: 'Box #2 is here: NOM NOM SLIME! Eat everything from breadcrumbs to galaxies in this slime-growing game.',
+    link: '/games/nom-nom-slime/'
+  },
+  {
     date: '2026-10-06',
     ja: 'DUST DASH の遊ぶ場所が新しくなりました。前の住所を開いても、記録（コイン・強化・最高記録）を引きついで、新しい場所へ案内します。',
     en: 'DUST DASH has a new home. The old address still works and brings your records (coins, upgrades, best runs) along.',
