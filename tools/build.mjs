@@ -404,10 +404,10 @@ function gamePage(g) {
         .join('')}</tbody></table></div>`
     : '';
   const shots = g.shots
-    ? `<ul class="shots${g.shotsTall ? ' tall' : ''}">${g.shots
+    ? `<ul class="shots${g.shotsTall ? ' tall' : ''}"${g.shotsRatio ? ` style="--shot-ratio: ${esc(g.shotsRatio)}"` : ''}>${g.shots
         .map(
           (s) =>
-            `<li><a href="${esc(abs(s.src))}.webp" data-shot><img src="${esc(abs(s.src))}-s.webp" alt="${esc(ja(s.alt))}" ${g.shotsTall ? 'width="280" height="605"' : 'width="640" height="360"'} loading="lazy"></a>${bi(s.alt, 'span', 'cap')}</li>`
+            `<li><a href="${esc(abs(s.src))}.webp" data-shot><img src="${esc(abs(s.src))}-s.webp" alt="${esc(ja(s.alt))}" ${g.shotsTall ? `width="280" height="${g.shotsRatio ? esc(g.shotsRatio.split('/')[1].trim()) : '605'}"` : 'width="640" height="360"'} loading="lazy"></a>${bi(s.alt, 'span', 'cap')}</li>`
         )
         .join('')}</ul>`
     : '';

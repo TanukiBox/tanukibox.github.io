@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-08',
+    ja: '3つめの箱「DINO DUEL」をならべました！ 技が当たる瞬間にタップする、3体対3体の恐竜カードバトルです。',
+    en: 'Box #3 is here: DINO DUEL! A 3-vs-3 dino card battle where you tap right as each move lands.',
+    link: '/games/dino-duel/'
+  },
+  {
     date: '2026-10-07',
     ja: '2つめの箱「ぱくぱくスライム」をならべました！ パンくずから銀河まで、なんでも食べて大きくなるスライム育成ゲームです。',
     en: 'Box #2 is here: NOM NOM SLIME! Eat everything from breadcrumbs to galaxies in this slime-growing game.',

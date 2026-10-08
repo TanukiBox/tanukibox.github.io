@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DINO DUEL は引っこしました｜Tanuki Box</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://dino-duel-f51.pages.dev/">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<!--
+  DINO DUEL の前の公開場所（GitHub Pages）。新しい場所へ案内する。
+  この場所のブラウザに残っている記録（tb.dino-duel.○○）を、住所の #import=… につけて渡す。
+  新しい場所のゲーム（js/game/import.js）が受け取って保存する。
+-->
+<script>
+(function () {
+  var TO = 'https://dino-duel-f51.pages.dev/';
+  var PREFIX = 'tb.dino-duel.';
+  var data = {}, n = 0;
+  try {
+    for (var i = 0; i < localStorage.length; i++) {
+      var k = localStorage.key(i);
+      if (k && k.indexOf(PREFIX) === 0) { data[k] = localStorage.getItem(k); n++; }
+    }
+  } catch (e) { /* 読めなくても、新しい場所へは案内する */ }
+  var hash = '';
+  if (n) {
+    try {
+      hash = '#import=' + btoa(encodeURIComponent(JSON.stringify(data))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    } catch (e) { hash = ''; }
+  }
+  location.replace(TO + location.search + hash);
+})();
+</script>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f3cf8e; color: #4a2d1a; font-family: system-ui, sans-serif; text-align: center; padding: 24px; box-sizing: border-box; }
+  a { color: #c85e23; font-weight: 700; }
+</style>
+</head>
+<body>
+<p>DINO DUEL は引っこしました。<br><a href="https://dino-duel-f51.pages.dev/">新しい場所で遊ぶ ›</a></p>
+<p lang="en">DINO DUEL has moved. <a href="https://dino-duel-f51.pages.dev/">Play at the new address ›</a></p>
+</body>
+</html>

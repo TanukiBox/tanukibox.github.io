@@ -475,7 +475,7 @@ main { padding: 34px 0 52px; }
 .shots .cap { display: block; text-align: center; font-size: 13px; font-weight: 800; margin-top: 6px; }
 /* スマホ縦画面のゲームの画面写真 */
 .shots.tall { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-.shots.tall img { aspect-ratio: 488 / 1055; }
+.shots.tall img { aspect-ratio: var(--shot-ratio, 488 / 1055); }
 .lightbox.tall-shot { max-width: min(460px, 92vw); }
 .lightbox.tall-shot img { max-height: 86vh; width: auto; margin: 0 auto; }
 .updates { background: var(--paper); border: var(--line) solid var(--ink); border-radius: 18px; padding: 4px 20px; }

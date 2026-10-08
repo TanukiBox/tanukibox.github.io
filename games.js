@@ -30,15 +30,99 @@
  *   howto: { ja: ['…', '…'], en: [...] },             // 遊び方（順番に）
  *   controls: [ { what: {ja,en}, phone: {ja,en}, pc: {ja,en} } ],  // 操作の表
  *   shots: [ { src: 'assets/games/dust-dash/title', alt: {ja,en} } ], // 画面写真（src.webp と src-s.webp を用意）
+ *   shotsTall: true, shotsRatio: '280 / 560', // スマホ縦画面のゲーム（小さい写真の幅 / 高さ。なければ 280 / 605）
  *   updates: [ { date: '2026-09-29', ja: '…', en: '…' } ]           // 更新の記録（新しい順）
  * }
  */
 window.TB_GAMES = [
   {
-    id: 'nom-nom-slime',
+    id: 'dino-duel',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'DINO DUEL',
+    sub: { ja: '恐竜カードバトル', en: 'Dino card battle' },
+    genre: { ja: 'カードバトル', en: 'Card battle' },
+    desc: {
+      ja: '技が当たる瞬間にタップ！ 3体対3体の恐竜カードバトル。賞金でパックを引いて40種の恐竜を集め、5つの大会を勝ちぬこう。',
+      en: 'Tap as each move lands! A 3-vs-3 dino card battle. Win prize money, pull packs, collect 40 dinos and conquer 5 cups.'
+    },
+    play: 'https://dino-duel-f51.pages.dev/',
+    steam: null,
+    released: '2026-10-08',
+    video: 'assets/games/dino-duel.mp4',
+    poster: 'assets/games/dino-duel-poster.webp',
+    art: { ja: 'assets/games/dino-duel.webp', en: 'assets/games/dino-duel-en.webp' },
+    ogp: { ja: 'assets/games/dino-duel.png', en: 'assets/games/dino-duel-en.png' },
+    box: '#f6b26b',
+    time: { ja: '1試合約2分', en: '~2 min per match' },
+    control: { ja: '片手でタップ', en: 'One-tap controls' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '恐竜を3体えらんでチームを組み、3体対3体で戦うカードバトル。技をえらんだら、あとはタイミング勝負です。',
+        '攻撃が当たる瞬間にタップすると威力アップ、相手の攻撃に合わせてタップするとダメージが減ります。勝って賞金をかせぎ、カードパックで40種の恐竜を集めて、5つの大会の優勝をめざそう。'
+      ],
+      en: [
+        'Pick three dinos, build a team and battle 3-vs-3. Once you choose your moves, it all comes down to timing.',
+        "Tap right as your attack lands to power it up, or as the foe's attack lands to take less damage. Win prize money, pull card packs to collect 40 dinos, and go for the title in all 5 cups."
+      ]
+    },
+    features: {
+      ja: [
+        '当たる瞬間にタップ。ぴったりなら攻撃は1.5倍、守りはダメージ0.6倍',
+        '40種の恐竜（ティラノサウルスからモササウルスまで）と、オリジナルのEX恐竜',
+        'アーケード風の筐体からカードを1枚ずつ。レアほど派手に光って揺れる',
+        'コンボ12種。同じ時代・同じ仲間でそろえると能力アップ',
+        'レベル10まで育てて、同じカードを重ねればさらに強く。負けても賞金と経験値は残る'
+      ],
+      en: [
+        'Tap as moves land: a perfect hit deals 1.5× damage, a perfect guard takes only 0.6×',
+        '40 dinos from T. rex to Mosasaurus, plus original EX dinos',
+        'Pull cards one at a time from an arcade machine — rarer cards flash and shake harder',
+        '12 combos: team up dinos from the same era or group for stat boosts',
+        'Level up to 10, then stack duplicates to grow even stronger. Losing still keeps your money and XP'
+      ]
+    },
+    howto: {
+      ja: [
+        '大会をえらぶ。ビギナー → ノービス → アドバンス → マスター → レジェンドの順に開く。',
+        '下のパネルで、3体それぞれの技をえらぶ（3タップ）。素早い順に6体が動く。',
+        '自分の攻撃では赤い輪、相手の攻撃では青い輪が縮む。輪が的に重なった瞬間に、画面のどこかをタップ。',
+        '勝つと賞金。カードパックを引いて恐竜を集め、チームを組みかえる。',
+        '3〜4戦を続けて勝つと優勝。優勝パックがもらえる。'
+      ],
+      en: [
+        'Choose a cup. They unlock in order: Beginner → Novice → Advance → Master → Legend.',
+        'Pick a move for each of your three dinos on the bottom panel (3 taps). All six dinos act in speed order.',
+        "A red ring shrinks on your attacks, a blue ring on the foe's. Tap anywhere the moment it meets the target.",
+        'Win prize money, pull card packs to collect dinos, and rebuild your team.',
+        'Win 3–4 matches in a row to take the cup and earn a prize pack.'
+      ]
+    },
+    controls: [
+      { what: { ja: '技をえらぶ', en: 'Choose moves' }, phone: { ja: 'カードをタップ', en: 'Tap a card' }, pc: { ja: 'クリック', en: 'Click' } },
+      { what: { ja: '当たる瞬間に合わせる', en: 'Time your tap' }, phone: { ja: '画面のどこかをタップ', en: 'Tap anywhere' }, pc: { ja: 'クリック・スペースキー', en: 'Click / Space' } },
+      { what: { ja: 'カードパックを引く', en: 'Pull a pack' }, phone: { ja: 'パックをタップ', en: 'Tap a pack' }, pc: { ja: 'クリック', en: 'Click' } }
+    ],
+    shotsTall: true,
+    shotsRatio: '280 / 560',
+    shots: [
+      { src: 'assets/games/dino-duel/ring', alt: { ja: '当たる瞬間にタップ', en: 'Tap as it lands' } },
+      { src: 'assets/games/dino-duel/perfect', alt: { ja: 'ぴったり！', en: 'Perfect!' } },
+      { src: 'assets/games/dino-duel/combo', alt: { ja: 'コンボ発動', en: 'Combo!' } },
+      { src: 'assets/games/dino-duel/ex', alt: { ja: 'EX恐竜', en: 'EX dino' } },
+      { src: 'assets/games/dino-duel/dex', alt: { ja: '図鑑', en: 'Dex' } },
+      { src: 'assets/games/dino-duel/champion', alt: { ja: '大会で優勝', en: 'Cup champion' } }
+    ],
+    updates: [
+      { date: '2026-10-08', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'nom-nom-slime',
+    status: 'out',
     title: 'NOM NOM SLIME',
     sub: { ja: 'ぱくぱくスライム', en: 'Eat-everything slime' },
     genre: { ja: '育成', en: 'Idle growth' },
