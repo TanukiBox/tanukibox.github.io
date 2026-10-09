@@ -36,10 +36,93 @@
  */
 window.TB_GAMES = [
   {
-    id: 'dino-duel',
+    id: 'matsuri-jackpot',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'MATSURI JACKPOT',
+    sub: { ja: 'マツリジャックポット', en: 'Neon festival ball frenzy' },
+    genre: { ja: '玉増やし', en: 'Incremental' },
+    desc: {
+      ja: 'ネオンの夜祭りで、パチンコ風の玉増やし！ 釘に当たるたび玉が増えて、画面が玉で埋まる。大当たりは打ち上げ花火。増えた玉で台を改造して、5つの台を巡ろう。',
+      en: 'A pachinko-style ball frenzy at a neon night festival! Every peg hit adds more balls until they flood the board, and jackpots burst into fireworks. Upgrade your machine and tour 5 festival machines.'
+    },
+    play: 'https://matsuri-jackpot.pages.dev/',
+    steam: null,
+    released: '2026-10-09',
+    video: 'assets/games/matsuri-jackpot.mp4',
+    poster: 'assets/games/matsuri-jackpot-poster.webp',
+    art: { ja: 'assets/games/matsuri-jackpot.webp', en: 'assets/games/matsuri-jackpot-en.webp' },
+    ogp: { ja: 'assets/games/matsuri-jackpot.jpg', en: 'assets/games/matsuri-jackpot-en.jpg' },
+    box: '#f3a6c8',
+    time: { ja: 'エンディングまで約45分', en: 'About 45 min to the ending' },
+    control: { ja: '長押しで発射', en: 'Press and hold' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        'ネオンに光る夜祭りの、パチンコ台。画面を長押しして玉を打ちこむと、釘に当たるたびに玉が増えていきます。真ん中の入賞口に入れば液晶の数字が回り、3つそろえば大当たり。夜空に花火が上がります。',
+        '増えた玉で台を改造すれば、玉はもっと増える。目標に届いたら「新台入替」で次の台へ。金魚すくい台から大花火台まで、5つの台を巡ってエンディングをめざそう。お金・課金・広告は一切ありません。'
+      ],
+      en: [
+        'A pachinko machine at a neon-lit night festival. Press and hold to launch balls — every peg they hit adds more. Land one in the center pocket to spin the numbers, and three of a kind is a JACKPOT, with fireworks lighting up the sky.',
+        'Spend your balls on upgrades to earn even more. Hit the goal, swap to a new machine, and tour 5 festival machines, from goldfish scooping to the grand fireworks, to reach the ending. No money, no purchases, no ads.'
+      ]
+    },
+    features: {
+      ja: [
+        '釘に当たるたび鈴の音が上がり、分裂釘で玉があふれて盤面を埋めつくす',
+        '保留の色（白→青→緑→赤→金→キリン柄→虹）、金魚すくい・射的・盆踊りのリーチ演出',
+        '大当たりは打ち上げ花火。連チャンが続く「花火大会」も',
+        '台の改造は12種類。閉じている間も、自動発射で玉が増える',
+        '5つの台を巡ってエンディングへ（初めてなら35〜55分くらい）。そのあとも、どこまでも増やせる'
+      ],
+      en: [
+        'Every peg hit rings a festival bell, and split pegs flood the board with balls',
+        'Colored hold balls (white → blue → green → red → gold → giraffe → rainbow) and reach scenes: goldfish scooping, a shooting gallery and a bon dance',
+        'Jackpots are fireworks, and the "Fireworks Rush" keeps the streak going',
+        '12 machine upgrades. Auto-fire keeps earning while you are away',
+        'Tour 5 machines to the ending (about 35–55 min the first time), then keep growing forever'
+      ]
+    },
+    howto: {
+      ja: [
+        '画面を長押しすると、玉が出る。押したまま指を左右にずらすと、打ち出しの強さが変わる（真ん中より少し左が入りやすい）。',
+        '真ん中の「START」に入ると、液晶の数字が回る。3つそろえば大当たり。',
+        '大当たりのあと「花火大会」に入ると、次も当たりやすくなって連チャンが続く。',
+        '増えた玉で、画面下の「改造」から台を強くする。「発射固定」なら手を離しても打ち続ける。',
+        '台ごとの目標に届いたら「新台入替」。常連メダルをもらって次の台へ。'
+      ],
+      en: [
+        'Press and hold to launch balls. Slide left or right while holding to change the power (a little left of center works best).',
+        'Land a ball in the center "START" pocket to spin the numbers. Three of a kind is a jackpot.',
+        'After a jackpot, the "Fireworks Rush" makes the next one more likely and keeps your streak going.',
+        'Spend your balls under "UPGRADE" at the bottom. "AUTO FIRE" keeps launching even when you let go.',
+        'Reach the goal for each machine, swap to a new one and earn regular medals.'
+      ]
+    },
+    controls: [
+      { what: { ja: '玉を発射', en: 'Launch balls' }, phone: { ja: '画面を長押し', en: 'Press and hold' }, pc: { ja: 'マウスで長押し・スペースキー', en: 'Hold the mouse / Space' } },
+      { what: { ja: '打ち出しの強さ', en: 'Launch power' }, phone: { ja: '押したまま左右にずらす', en: 'Slide left/right while holding' }, pc: { ja: '押したまま左右・← → キー', en: 'Drag left/right / ← → keys' } },
+      { what: { ja: 'PUSH・早送り', en: 'PUSH / skip' }, phone: { ja: '画面をタップ', en: 'Tap' }, pc: { ja: 'クリック・Enter キー', en: 'Click / Enter' } },
+      { what: { ja: '発射固定', en: 'Auto fire' }, phone: { ja: '画面下の「発射固定」', en: '"AUTO FIRE" button' }, pc: { ja: 'F キー', en: 'F key' } },
+      { what: { ja: 'レバー', en: 'Lever' }, phone: { ja: '下から上へスワイプ', en: 'Swipe up' }, pc: { ja: '上へドラッグ・↑ キー', en: 'Drag up / ↑ key' } }
+    ],
+    shotsTall: true,
+    shotsRatio: '280 / 498',
+    shots: [
+      { src: 'assets/games/matsuri-jackpot/balls', alt: { ja: '玉で埋まる盤面', en: 'A board full of balls' } },
+      { src: 'assets/games/matsuri-jackpot/rainbow', alt: { ja: '虹保留', en: 'Rainbow hold' } },
+      { src: 'assets/games/matsuri-jackpot/bon-dance', alt: { ja: '盆踊りリーチ', en: 'Bon-dance reach' } },
+      { src: 'assets/games/matsuri-jackpot/result', alt: { ja: '大当たり終了', en: 'Jackpot results' } }
+    ],
+    updates: [
+      { date: '2026-10-09', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'dino-duel',
+    status: 'out',
     title: 'DINO DUEL',
     sub: { ja: '恐竜カードバトル', en: 'Dino card battle' },
     genre: { ja: 'カードバトル', en: 'Card battle' },
