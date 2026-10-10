@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-10',
+    ja: '5つめの箱「焚き火から王国へ」をならべました！ 焚き火しか残っていない廃村を、王国に育てる3Dの建国ゲームです。',
+    en: 'Box #5 is here: CAMPFIRE TO KINGDOM! Grow a ruined village with only a campfire into a kingdom in this 3D builder.',
+    link: '/games/campfire-to-kingdom/'
+  },
+  {
     date: '2026-10-09',
     ja: '4つめの箱「MATSURI JACKPOT」をならべました！ ネオンの夜祭りで玉を増やす、パチンコ風のゲームです。大当たりは打ち上げ花火。',
     en: 'Box #4 is here: MATSURI JACKPOT! A pachinko-style ball frenzy at a neon night festival, with fireworks for every jackpot.',

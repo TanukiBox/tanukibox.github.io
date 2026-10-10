@@ -36,10 +36,91 @@
  */
 window.TB_GAMES = [
   {
-    id: 'matsuri-jackpot',
+    id: 'campfire-to-kingdom',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'CAMPFIRE TO KINGDOM',
+    sub: { ja: '焚き火から王国へ', en: 'From a campfire to a kingdom' },
+    genre: { ja: '建国・3D', en: '3D kingdom builder' },
+    desc: {
+      ja: '焚き火しか残っていない廃村を、木を切り、岩を割って、王国に育てよう。近づくだけで自動で切って・割って・戦う、3Dの建国ゲーム。',
+      en: "All that's left of the village is a campfire. Chop trees and break rocks to grow it into a kingdom. Just walk up to things to chop, mine and fight automatically in this 3D kingdom builder."
+    },
+    play: 'https://campfire-to-kingdom.pages.dev/',
+    steam: null,
+    released: '2026-10-10',
+    video: 'assets/games/campfire-to-kingdom.mp4',
+    poster: 'assets/games/campfire-to-kingdom-poster.webp',
+    art: { ja: 'assets/games/campfire-to-kingdom.webp', en: 'assets/games/campfire-to-kingdom-en.webp' },
+    ogp: { ja: 'assets/games/campfire-to-kingdom.jpg', en: 'assets/games/campfire-to-kingdom-en.jpg' },
+    box: '#b8dd8c',
+    time: { ja: 'エンディングまで約3時間半', en: 'About 3.5 hours to the ending' },
+    control: { ja: 'ドラッグで移動', en: 'Drag to move' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '残っているのは、焚き火ひとつだけ。木を切り、岩を割って、素材を背中に積み上げ、建設マスに運んで、こわれた家を直していきます。',
+        '家が直ると住民が増え、製材所やお店、鍛冶屋が動き出す。村から町、城下町、そして王国へ。4つの章を進めて、最後は戴冠式をめざそう。'
+      ],
+      en: [
+        'All that is left is a single campfire. Chop trees, break rocks, stack the materials high on your back and carry them to building spots to repair the ruined houses.',
+        'Fixed houses bring new villagers, and the sawmill, shop and smithy come to life. Grow from a village to a town, a castle town and finally a kingdom — four chapters all the way to your coronation.'
+      ]
+    },
+    features: {
+      ja: [
+        '木や岩、モンスターに近づくだけで、自動で切る・割る・戦う',
+        '拾った素材は背中に積み上がる。建設マスに立つと、流しこんで建物が直る',
+        '加工場・お店・鍛冶屋・宿屋・港…住民を雇えば、運んで売るのも自動',
+        '武器と防具を作って、ぬし（ボス）やドラゴンに挑む。宝箱や試練の塔も',
+        '全4章・エンディングまで約3時間半。閉じている間も、お店の売上がたまる'
+      ],
+      en: [
+        'Walk up to trees, rocks and monsters to chop, mine and fight automatically',
+        'Materials stack up on your back — stand on a building spot to pour them in and repair it',
+        'Sawmill, shop, smithy, inn, harbor… hire villagers to carry and sell for you',
+        'Forge weapons and armor to take on bosses and a dragon. Treasure chests and a Trial Tower too',
+        '4 chapters, about 3.5 hours to the ending. Your shops keep earning while you are away'
+      ]
+    },
+    howto: {
+      ja: [
+        '画面のどこでもドラッグして歩く（指を置いた所がスティックになる）。',
+        '木や岩に近づくと、自動で切る・割る。拾った素材は背中に積み上がる。',
+        '建設マスの上に立つと、背中の素材が流しこまれ、そろうと建物が直る。',
+        '製材所・石工場で素材を加工し、お店で売ってコインをかせぐ。コインで土地を買い、住民を雇う。',
+        '狩り場のぬしを倒すと章クリア。次の章で、村はさらに大きくなる。'
+      ],
+      en: [
+        'Drag anywhere on the screen to walk (wherever you touch becomes the stick).',
+        'Walk up to trees and rocks to chop and break them. What you pick up stacks on your back.',
+        'Stand on a building spot to pour in your materials; once it has enough, the building is repaired.',
+        'Process materials at the sawmill and stonework, sell them at the shop, then buy land and hire villagers with your coins.',
+        'Defeat the boss of the hunting ground to clear the chapter. The village grows bigger in the next one.'
+      ]
+    },
+    controls: [
+      { what: { ja: '歩く', en: 'Walk' }, phone: { ja: '画面のどこでもドラッグ', en: 'Drag anywhere' }, pc: { ja: 'WASD・矢印キー・ドラッグ', en: 'WASD / arrow keys / drag' } },
+      { what: { ja: '切る・割る・戦う', en: 'Chop, mine, fight' }, phone: { ja: '近づくだけ（自動）', en: 'Just walk up (automatic)' }, pc: { ja: '近づくだけ（自動）', en: 'Just walk up (automatic)' } },
+      { what: { ja: '荷物を捨てる', en: 'Drop items' }, phone: { ja: '上の荷物の数をタップ', en: 'Tap the bag count at the top' }, pc: { ja: '上の荷物の数をクリック', en: 'Click the bag count at the top' } },
+      { what: { ja: '強化・住民・冒険・倉庫・図鑑', en: 'Upgrade, people, adventure, storage, book' }, phone: { ja: '右下のボタン', en: 'Buttons at the bottom right' }, pc: { ja: '右下のボタン', en: 'Buttons at the bottom right' } }
+    ],
+    shotsTall: true,
+    shotsRatio: '280 / 498',
+    shots: [
+      { src: 'assets/games/campfire-to-kingdom/title', alt: { ja: 'タイトル', en: 'Title screen' } },
+      { src: 'assets/games/campfire-to-kingdom/town', alt: { ja: '城下町', en: 'Castle town' } },
+      { src: 'assets/games/campfire-to-kingdom/battle', alt: { ja: '狩り場で戦う', en: 'Battle in the hunting ground' } }
+    ],
+    updates: [
+      { date: '2026-10-10', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'matsuri-jackpot',
+    status: 'out',
     title: 'MATSURI JACKPOT',
     sub: { ja: 'マツリジャックポット', en: 'Neon festival ball frenzy' },
     genre: { ja: '玉増やし', en: 'Incremental' },
