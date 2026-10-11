@@ -36,10 +36,90 @@
  */
 window.TB_GAMES = [
   {
-    id: 'campfire-to-kingdom',
+    id: 'starting-village',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'Chief of the Starting Village',
+    sub: { ja: 'はじまりの村の村長', en: 'Village management RPG' },
+    genre: { ja: '村経営', en: 'Village management' },
+    desc: {
+      ja: '村長になって9つの施設を育て、村に来る勇者たちを支えよう。宿屋や鍛冶屋で勇者を送り出し、目指すは七魔王と魔神の討伐。ドット絵の村経営ゲーム。',
+      en: 'Become the village Chief, grow 9 buildings and support the heroes who stop by. Send them off from your Inn and Smithy to defeat the seven demon lords and the demon god. A pixel-art village management game.'
+    },
+    play: 'https://starting-village.pages.dev/',
+    steam: null,
+    released: '2026-10-11',
+    video: 'assets/games/starting-village.mp4',
+    poster: 'assets/games/starting-village-poster.webp',
+    art: { ja: 'assets/games/starting-village.webp', en: 'assets/games/starting-village.webp' },
+    ogp: { ja: 'assets/games/starting-village.png', en: 'assets/games/starting-village.png' },
+    box: '#c9b98f',
+    time: { ja: '最初の魔王まで約1時間', en: 'About 1 hour to the first demon lord' },
+    control: { ja: 'タップで操作', en: 'Tap controls' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        'あなたは今日から、はじまりの村の村長。宿屋・雑貨屋・鍛冶屋・ギルドなど9つの施設を育てて、旅の勇者たちが立ち寄りたくなる村にしていきます。',
+        '勇者に装備と料理を持たせて遠征に送り出し、手に入れた素材で村はさらに大きくなる。開拓地から城下町へ育てながら、七魔王を一体ずつたおし、最後は魔神に挑もう。'
+      ],
+      en: [
+        'Starting today, you are the Chief of the Starting Village. Grow 9 buildings, such as the Inn, General Store, Smithy and Guild, into a village traveling heroes love to visit.',
+        'Equip and feed your heroes, then send them off on expeditions. The materials they bring back help your village grow even bigger. Grow from an outpost into a castle town, defeat the seven demon lords one by one, and finally face the demon god.'
+      ]
+    },
+    features: {
+      ja: [
+        '畑・漁場、宿屋、雑貨屋、鍛冶屋、ギルド、治療院、錬金屋、スカウト所、貿易所。9つの施設をLv5まで育てる',
+        '朝・昼・夜がめぐる村。旅の勇者が買い物をして宿に泊まり、なじみの客になる',
+        '勇者を雇って装備を作り、7つの地方へ遠征。依頼や手配魔物、宝箱や旅の商人も',
+        '七魔王にはそれぞれ弱点がある。作戦会議で対策の道具や料理をそろえて挑もう',
+        '転職と上級職、スキル、個性と美徳。勇者の見た目は装備で変わる。日本語と英語'
+      ],
+      en: [
+        'Farm & Fishery, Inn, General Store, Smithy, Guild, Clinic, Alchemy Shop, Scout Office and Trading Post: grow all 9 buildings up to Lv 5',
+        'Morning, day and night pass in the village. Traveling heroes shop, stay at your Inn and become regulars',
+        'Hire heroes, forge their gear and send them on expeditions to 7 regions, with requests, wanted monsters, treasure and traveling merchants',
+        'Each demon lord has a weakness. Prepare the right items and meals at the War Council',
+        'Class changes, advanced classes, skills, traits and virtues. Heroes look different with every piece of gear. Japanese and English'
+      ]
+    },
+    howto: {
+      ja: [
+        '村の画面で施設を押すと、その施設の画面が開く。品物を作って棚に並べると、旅の勇者が買っていく。',
+        'お金と素材で施設を強化する。名声が上がると村のランクが上がり、新しい施設が建てられる。',
+        '地図の画面で勇者のパーティを組み、遠征に送り出す。帰ってきたら日誌で結果を見る。',
+        '魔王の城に行く前に、作戦会議で対策（○ × ？）を確かめる。',
+        '時間は「一時停止・ふつう・早送り」で切りかえられる。はじめは案内役のハナが教えてくれる。'
+      ],
+      en: [
+        'Tap a building in the village to open it. Make goods and stock the shelves, and traveling heroes will buy them.',
+        'Upgrade buildings with gold and materials. As your fame grows, your village rank goes up and new buildings unlock.',
+        'Form a party on the map and send it on an expedition. When it returns, read the results in the journal.',
+        'Before heading to a demon castle, check your counters (○ × ?) at the War Council.',
+        'Switch time between pause, normal and fast-forward. Hana, the Village Clerk, will guide you at the start.'
+      ]
+    },
+    controls: [
+      { what: { ja: '施設・ボタンを押す', en: 'Buildings and buttons' }, phone: { ja: 'タップ', en: 'Tap' }, pc: { ja: 'クリック', en: 'Click' } },
+      { what: { ja: '村・地図を見わたす', en: 'Look around the village and map' }, phone: { ja: 'スクロール', en: 'Scroll' }, pc: { ja: 'スクロール', en: 'Scroll' } },
+      { what: { ja: '時間の速さ', en: 'Time speed' }, phone: { ja: '右下のボタン', en: 'Buttons at the bottom right' }, pc: { ja: '右下のボタン', en: 'Buttons at the bottom right' } }
+    ],
+    shotsTall: true,
+    shotsRatio: '280 / 498',
+    shots: [
+      { src: 'assets/games/starting-village/title', alt: { ja: 'タイトル', en: 'Title screen' } },
+      { src: 'assets/games/starting-village/village', alt: { ja: 'はじまりの村', en: 'The Starting Village' } },
+      { src: 'assets/games/starting-village/battle', alt: { ja: '魔王戦', en: 'Demon lord battle' } }
+    ],
+    updates: [
+      { date: '2026-10-11', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'campfire-to-kingdom',
+    status: 'out',
     title: 'CAMPFIRE TO KINGDOM',
     sub: { ja: '焚き火から王国へ', en: 'From a campfire to a kingdom' },
     genre: { ja: '建国・3D', en: '3D kingdom builder' },
