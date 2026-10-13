@@ -36,10 +36,91 @@
  */
 window.TB_GAMES = [
   {
-    id: 'starting-village',
+    id: 'living-isle',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'LIVING ISLE',
+    sub: { ja: 'いのちの島', en: 'Island-building sandbox' },
+    genre: { ja: '箱庭・3D', en: '3D sandbox' },
+    desc: {
+      ja: '何もない海から島を盛り上げ、川を流し、木を植えて、動物たちの「すみか」をつくる箱庭ゲーム。20種類の動物を招いて、島の主に会えるかな。',
+      en: "Raise an island from the empty sea, let rivers flow and plant trees to build homes for animals. Welcome 20 kinds of creatures and meet the island's guardian."
+    },
+    play: 'https://living-isle.pages.dev/',
+    steam: null,
+    released: '2026-10-13',
+    video: 'assets/games/living-isle.mp4',
+    poster: 'assets/games/living-isle-poster.webp',
+    art: { ja: 'assets/games/living-isle.webp', en: 'assets/games/living-isle.webp' },
+    ogp: { ja: 'assets/games/living-isle.jpg', en: 'assets/games/living-isle.jpg' },
+    box: '#9fd8e6',
+    time: { ja: '島の主まで約30〜40分', en: 'About 30–40 min to the guardian' },
+    control: { ja: 'タップと長押し', en: 'Tap and hold' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '何もない海を長押しすると、島が盛り上がってきます。砂浜、草原、川辺、森、花畑…。地形と植物から、ゲームが自動で動物たちの「すみか」を見つけてくれます。',
+        'お願いボードの動物が「こんな所に住みたい」と教えてくれるので、そのすみかを作って育て、ハートを集めて招待しよう。20種類の動物がそろうと、最後に島の主がやってきます。失敗で終わることはありません。'
+      ],
+      en: [
+        'Press and hold on the empty sea, and an island rises up. Beaches, grasslands, riversides, forests, flower fields… the game finds animal homes in the land and plants you shape.',
+        'Animals on the request board tell you where they want to live. Build and grow those homes, collect hearts and invite them in. Gather all 20 kinds and the island guardian finally appears. There is no way to fail.'
+      ]
+    },
+    features: {
+      ja: [
+        '盛る・掘る・ならす、泉から川を引く、種をまく。指でなぞって島をつくる',
+        '8種類のすみか（砂浜・草原・川辺・森・花畑・池・岩場・高原）を自動で見分ける',
+        'カニ、ウサギ、キツネ、カワウソ、ウミガメ、イルカ…20種類の動物。なでると赤ちゃんも',
+        '朝・昼・夜がめぐり、雨のあとには虹。動物どうしのできごとや、めずらしい色の動物も',
+        '写真モードで島を撮ってシェア。日本語と英語'
+      ],
+      en: [
+        'Raise, dig and flatten land, draw rivers from springs and sow seeds — shape the island with your finger',
+        'The game spots 8 kinds of homes: beach, grassland, riverside, forest, flower field, pond, cliffs and plateau',
+        '20 kinds of animals: crabs, rabbits, foxes, otters, sea turtles, dolphins and more. Pet them and babies are born',
+        'Morning, day and night, rainbows after the rain, little animal moments and rare-colored animals',
+        'Photo mode to snap and share your island. Japanese and English'
+      ]
+    },
+    howto: {
+      ja: [
+        '「盛る」を選んで海を長押しすると、陸ができる。海辺の低い所が砂浜になる。',
+        '「種」で草・花・木をまく。「泉」を坂の上に置いたり、なぞったりすると川が流れる。',
+        'できたすみかの名札をタップすると、レベルを上げる条件が見られる。',
+        '浮かぶハートを集めて、お願いボードの動物を招待する。',
+        '「見る」で動物をタップすると追いかけて、もう一度タップでなでられる。'
+      ],
+      en: [
+        'Pick "Raise" and hold on the sea to make land. Low ground by the water becomes beach.',
+        'Use "Seeds" to sow grass, flowers and trees. Place a spring on a slope, or trace a path, to make a river.',
+        'Tap a home\'s name tag to see what it needs to level up.',
+        'Collect floating hearts and invite the animals on the request board.',
+        'In "Look" mode, tap an animal to follow it, and tap again to pet it.'
+      ]
+    },
+    controls: [
+      { what: { ja: '道具を使う', en: 'Use a tool' }, phone: { ja: 'タップ・長押し', en: 'Tap / hold' }, pc: { ja: 'クリック・押したまま', en: 'Click / hold' } },
+      { what: { ja: '島を回す', en: 'Rotate the view' }, phone: { ja: '1本指でドラッグ', en: 'Drag with one finger' }, pc: { ja: 'ドラッグ', en: 'Drag' } },
+      { what: { ja: '寄る・離れる', en: 'Zoom' }, phone: { ja: 'ピンチ・＋ − ボタン', en: 'Pinch / + − buttons' }, pc: { ja: 'ホイール・＋ − ボタン', en: 'Wheel / + − buttons' } },
+      { what: { ja: '元に戻す', en: 'Undo' }, phone: { ja: '↶ ボタン', en: '↶ button' }, pc: { ja: '↶ ボタン・Ctrl＋Z', en: '↶ button / Ctrl+Z' } }
+    ],
+    shotsTall: true,
+    shotsRatio: '280 / 498',
+    shots: [
+      { src: 'assets/games/living-isle/island', alt: { ja: '育った島', en: 'A grown island' } },
+      { src: 'assets/games/living-isle/fox', alt: { ja: 'キツネ', en: 'Fox' } },
+      { src: 'assets/games/living-isle/turtle', alt: { ja: 'ウミガメ', en: 'Sea turtle' } }
+    ],
+    updates: [
+      { date: '2026-10-13', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'starting-village',
+    status: 'out',
     title: 'Chief of the Starting Village',
     sub: { ja: 'はじまりの村の村長', en: 'Village management RPG' },
     genre: { ja: '村経営', en: 'Village management' },

@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-13',
+    ja: '7つめの箱「いのちの島」をならべました！ 何もない海から島を盛り上げて、動物たちのすみかをつくる3Dの箱庭ゲームです。',
+    en: 'Box #7 is here: LIVING ISLE! Raise an island from the empty sea and build homes for animals in this 3D sandbox.',
+    link: '/games/living-isle/'
+  },
+  {
     date: '2026-10-11',
     ja: '6つめの箱「はじまりの村の村長」をならべました！ 村を育てて勇者を支え、七魔王と魔神の討伐を目指す、ドット絵の村経営ゲームです。',
     en: 'Box #6 is here: Chief of the Starting Village! Grow your village, support your heroes and take on the seven demon lords in this pixel-art management game.',
