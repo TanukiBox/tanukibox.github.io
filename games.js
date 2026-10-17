@@ -36,10 +36,91 @@
  */
 window.TB_GAMES = [
   {
-    id: 'living-isle',
+    id: 'oh-edo-taco',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'Oh!Edo Taco Tuesday!!',
+    sub: { ja: '多幸寿（タコス）', en: 'A taco stall in old Edo' },
+    genre: { ja: '料理・屋台経営', en: 'Cooking / food stall' },
+    desc: {
+      ja: 'タコス職人が、子だぬきの化け術で屋台ごと江戸へ！ 朝は魚河岸や里山で仕入れ、夜は屋台でお客の好みに合わせてタコスを包もう。目指すは上様への献上。',
+      en: "A taco chef is whisked back to old Edo, food truck and all, by a little tanuki's magic. Shop for ingredients by day, wrap tacos for picky customers by night, and aim to serve the Shogun."
+    },
+    play: 'https://oh-edo-taco-tuesday.pages.dev/',
+    steam: null,
+    released: '2026-10-17',
+    video: 'assets/games/oh-edo-taco.mp4',
+    poster: 'assets/games/oh-edo-taco-poster.webp',
+    art: { ja: 'assets/games/oh-edo-taco.webp', en: 'assets/games/oh-edo-taco.webp' },
+    ogp: { ja: 'assets/games/oh-edo-taco.png', en: 'assets/games/oh-edo-taco.png' },
+    box: '#e8a87c',
+    time: { ja: 'エンディングまで約3時間', en: 'About 3 hours to the ending' },
+    control: { ja: '片手でタップ', en: 'One-handed taps' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '火曜日の閉店後、東京・両国のタコス職人マテオは、子だぬきのポン吉の化け術で屋台ごと江戸へ。のれんには当て字の「多幸寿」。持ってきたトウモロコシ粉は、残りわずかです。',
+        '江戸の魚河岸や里山で食材を仕入れ、麩の焼きや海苔でも皮を工夫して、夜の屋台でお客の注文にこたえよう。評判を上げて日本中を席巻し、最後は上様にタコスを献上する物語です。'
+      ],
+      en: [
+        "After closing on a Tuesday night, Mateo, a taco chef in Ryogoku, Tokyo, is whisked back to Edo — food truck and all — by Ponkichi the little tanuki. The noren now reads 多幸寿 (Ta-ko-su), and his corn flour is almost gone.",
+        'Shop at Edo\'s fish market and hills, invent shells from fu-no-yaki crepes and nori, and serve hungry customers at your night stall. Build your name across Japan and, finally, present a taco to the Shogun.'
+      ]
+    },
+    features: {
+      ja: [
+        '夜の屋台：注文を聞いて、焼く・揚げる・炙る、皮 → 具 → たれ → 薬味をのせて「包んで出す！」',
+        '味の5要素（辛・酸・旨・香・食感）とお客の好みで、星と代金が決まる',
+        '朝の仕入れはミニゲーム。魚河岸の競り、江戸湾の一本釣り、里山の採集、山の追い込み、長崎の抜け荷',
+        '江戸の食材 × メキシコのタコスで40種類以上。常連、ライバルの寿司の親方、料理対決、季節の行事',
+        'Blender の3Dモデルから作ったドット絵。日本語と英語'
+      ],
+      en: [
+        'Night stall: take orders, grill, fry and sear, then add shell → filling → sauce → garnish and "Wrap & serve!"',
+        'Five flavors (hot, sour, umami, aroma, crunch) and each customer\'s taste decide your stars and pay',
+        'Morning shopping mini-games: the fish auction, Edo Bay fishing, foraging, a mountain drive and Nagasaki smugglers',
+        '40+ tacos from Edo ingredients in Mexican styles. Regulars, a rival sushi master, cooking duels and seasonal festivals',
+        'Pixel art made from Blender 3D models. Japanese and English'
+      ]
+    },
+    howto: {
+      ja: [
+        '朝：仕入れ先を選ぶ。ミニゲームで食材を手に入れる（1日3か所まで）。町の店でも買える。',
+        '夜：お客の注文を見て、焼き場で具を焼き、皮・具・たれ・薬味の順にタップでのせる。',
+        '「包んで出す！」で出す。好みに合う薬味を足すと、星が上がりやすい。',
+        '約3分で閉店。売上・満足度・評判を見て、次の日へ。',
+        '評判ランクが上がると、物語が進み、屋台の改装や高級な材料も使えるようになる。'
+      ],
+      en: [
+        'Morning: pick where to shop and win ingredients in mini-games (up to 3 a day). Town shops are always open.',
+        'Night: read each order, cook the filling at the grill, then tap shell, filling, sauce and garnish in order.',
+        'Hit "Wrap & serve!". Adding a garnish they like helps you earn more stars.',
+        'The stall closes after about 3 minutes. Check your takings, satisfaction and reputation, then on to the next day.',
+        'As your reputation rank rises, the story moves on and stall upgrades and luxury ingredients open up.'
+      ]
+    },
+    controls: [
+      { what: { ja: '選ぶ・のせる', en: 'Pick / add' }, phone: { ja: 'タップ', en: 'Tap' }, pc: { ja: 'クリック', en: 'Click' } },
+      { what: { ja: 'たれを回しかける', en: 'Drizzle sauce' }, phone: { ja: 'なぞる', en: 'Swipe' }, pc: { ja: 'ドラッグ', en: 'Drag' } },
+      { what: { ja: '炙る', en: 'Sear' }, phone: { ja: '長押し', en: 'Press and hold' }, pc: { ja: '押したまま', en: 'Hold the mouse' } }
+    ],
+    shotsTall: true,
+    shotsRatio: '280 / 477',
+    shots: [
+      { src: 'assets/games/oh-edo-taco/counter', alt: { ja: '夜の屋台', en: 'The night stall' } },
+      { src: 'assets/games/oh-edo-taco/kitchen', alt: { ja: '盛り付け', en: 'Plating' } },
+      { src: 'assets/games/oh-edo-taco/taco', alt: { ja: '江戸前天ぷらタコス', en: 'Edo-style tempura taco' } },
+      { src: 'assets/games/oh-edo-taco/smuggle', alt: { ja: '長崎の抜け荷', en: 'Nagasaki smugglers' } }
+    ],
+    updates: [
+      { date: '2026-10-17', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'living-isle',
+    status: 'out',
     title: 'LIVING ISLE',
     sub: { ja: 'いのちの島', en: 'Island-building sandbox' },
     genre: { ja: '箱庭・3D', en: '3D sandbox' },

@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-17',
+    ja: '8つめの箱「Oh!Edo Taco Tuesday!!（多幸寿）」をならべました！ 江戸にタイムスリップしたタコス職人が、屋台でタコスを売る料理ゲームです。',
+    en: 'Box #8 is here: Oh!Edo Taco Tuesday!! A taco chef lands in old Edo and runs a taco stall in this cooking game.',
+    link: '/games/oh-edo-taco/'
+  },
+  {
     date: '2026-10-13',
     ja: '7つめの箱「いのちの島」をならべました！ 何もない海から島を盛り上げて、動物たちのすみかをつくる3Dの箱庭ゲームです。',
     en: 'Box #7 is here: LIVING ISLE! Raise an island from the empty sea and build homes for animals in this 3D sandbox.',
