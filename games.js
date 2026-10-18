@@ -36,10 +36,87 @@
  */
 window.TB_GAMES = [
   {
-    id: 'oh-edo-taco',
+    id: 'chalkman',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'CHALK MAN',
+    sub: { ja: 'チョークマン', en: 'Write a word, make it real' },
+    genre: { ja: 'ことばパズル', en: 'Word puzzle' },
+    desc: {
+      ja: '放課後の黒板で、落書きの棒人間が動き出した！ 書いたことばが、チョークの文字のまま「物」になる。「はしご」と書けば、「はしご」の文字がのびていく…。全20問・エンディング8種類。',
+      en: 'After school, a stick figure scribbled on the blackboard comes to life! Every word you write becomes a thing, still in chalk letters. Write "LADDER" and the word itself stretches down. 20 puzzles, 8 endings.'
+    },
+    play: 'https://chalkman.pages.dev/',
+    steam: null,
+    released: '2026-10-18',
+    video: 'assets/games/chalkman.mp4',
+    poster: 'assets/games/chalkman-poster.webp',
+    art: { ja: 'assets/games/chalkman.webp', en: 'assets/games/chalkman.webp' },
+    ogp: { ja: 'assets/games/chalkman.png', en: 'assets/games/chalkman.png' },
+    box: '#7fb08f',
+    time: { ja: 'クリアまで約30分', en: 'About 30 min to clear' },
+    control: { ja: 'ことばを書く', en: 'Type a word' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '放課後の黒板は、生徒たちの落書きでいっぱい。その中の棒人間が動き出しました。明日の朝には、日直に黒板を消されてしまいます。',
+        '落書きの中を冒険して、教室に置き忘れられた自由帳まで逃がしてあげよう。書いたことばは、絵にならずに、チョークの文字のまま「物」になります。うまくいくことばもあれば、へんなことが起きることばも。'
+      ],
+      en: [
+        'After school, the blackboard is covered in doodles — and one stick figure has come to life. Tomorrow morning, the class monitor will wipe the board clean.',
+        'Help him adventure through the doodles and escape into a notebook left in the classroom. Words you write don\'t become pictures — they become things, still in chalk letters. Some words save the day; others make funny things happen.'
+      ]
+    },
+    features: {
+      ja: [
+        '書いたことばが、文字のまま動く。「はしご」はのびて、「アリ」は大群で橋になる',
+        'ひとつの問題に、正解がいくつもある。へんなことばには、へんな反応も',
+        '全20問。空と地下に分かれる道と、エンディング8種類',
+        '見つけた答えが残る「答え図鑑」。失敗が続くとヒントも',
+        '撮影モードとシェア。日本語と英語'
+      ],
+      en: [
+        'Words move as words: a "ladder" stretches down, "ants" swarm into a bridge',
+        'Many right answers for each puzzle — and funny reactions to strange ones',
+        '20 puzzles, a path that splits into sky and underground, and 8 endings',
+        'An Answer Book keeps every answer you find. Hints appear after a few misses',
+        'Photo mode and sharing. Japanese and English'
+      ]
+    },
+    howto: {
+      ja: [
+        '問題を読んで、棒人間を助けられそうなことばを考える。',
+        '書く欄にことばを入れて「書く」。チョークで1文字ずつ書かれて、黒板の上で「物」になる。',
+        'うまくいけば次の問題へ。失敗すると、右下のチョークが減る。',
+        'チョークがなくなると、黒板消しに消されてしまう。',
+        '自由帳までたどりつけば、エンディング。'
+      ],
+      en: [
+        'Read the puzzle and think of a word that could help the stick figure.',
+        'Type it and press "Write". It\'s written in chalk letter by letter and becomes a thing on the board.',
+        'Get it right and move on. Get it wrong and your chalk runs down.',
+        'Run out of chalk and the eraser wipes you away.',
+        'Reach the notebook to see an ending.'
+      ]
+    },
+    controls: [
+      { what: { ja: 'ことばを書く', en: 'Write a word' }, phone: { ja: '書く欄に入力して「書く」', en: 'Type and tap "Write"' }, pc: { ja: '入力して Enter', en: 'Type and press Enter' } },
+      { what: { ja: '早送り', en: 'Fast-forward' }, phone: { ja: '黒板をタップ', en: 'Tap the board' }, pc: { ja: 'クリック', en: 'Click' } }
+    ],
+    shots: [
+      { src: 'assets/games/chalkman/title', alt: { ja: 'タイトル', en: 'Title screen' } },
+      { src: 'assets/games/chalkman/ladder', alt: { ja: '「はしご」で降りる', en: 'Down the "ladder"' } },
+      { src: 'assets/games/chalkman/ants', alt: { ja: '「アリ」の橋', en: 'A bridge of "ants"' } }
+    ],
+    updates: [
+      { date: '2026-10-18', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'oh-edo-taco',
+    status: 'out',
     title: 'Oh!Edo Taco Tuesday!!',
     sub: { ja: '多幸寿（タコス）', en: 'A taco stall in old Edo' },
     genre: { ja: '料理・屋台経営', en: 'Cooking / food stall' },

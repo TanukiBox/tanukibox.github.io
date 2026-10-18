@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-18',
+    ja: '9つめの箱「チョークマン」をならべました！ 書いたことばが、チョークの文字のまま「物」になる、ことばのパズルゲームです。',
+    en: 'Box #9 is here: CHALK MAN! A word puzzle game where everything you write becomes a thing — still in chalk letters.',
+    link: '/games/chalkman/'
+  },
+  {
     date: '2026-10-17',
     ja: '8つめの箱「Oh!Edo Taco Tuesday!!（多幸寿）」をならべました！ 江戸にタイムスリップしたタコス職人が、屋台でタコスを売る料理ゲームです。',
     en: 'Box #8 is here: Oh!Edo Taco Tuesday!! A taco chef lands in old Edo and runs a taco stall in this cooking game.',
