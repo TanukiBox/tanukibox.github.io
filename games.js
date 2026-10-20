@@ -36,10 +36,93 @@
  */
 window.TB_GAMES = [
   {
-    id: 'chalkman',
+    id: 'shinra-banzan',
     status: 'out',
     isNew: true,
     featured: true,
+    title: 'SHINRA BANZAN',
+    sub: { ja: '森羅万斬', en: 'Slash the whole forest' },
+    genre: { ja: '放置・育成', en: 'Incremental' },
+    desc: {
+      ja: '指を置くだけで、間合いに入った木が次々と斬れていく。丸太を集めて強くなり、森が広がり、ついには森ごと斬り尽くす。墨絵の世界の、居合のインクリメンタルゲーム。',
+      en: 'Just rest your finger on the forest and every tree in reach is cut down. Collect logs, grow stronger, widen the forest — until you slash the whole thing in one stroke. An ink-painted incremental game about iaido.'
+    },
+    play: 'https://shinra-banzan.pages.dev/',
+    steam: null,
+    released: '2026-10-20',
+    video: 'assets/games/shinra-banzan.mp4',
+    poster: 'assets/games/shinra-banzan-poster.webp',
+    art: { ja: 'assets/games/shinra-banzan.webp', en: 'assets/games/shinra-banzan.webp' },
+    ogp: { ja: 'assets/games/shinra-banzan.png', en: 'assets/games/shinra-banzan.png' },
+    box: '#cdb98f',
+    time: { ja: 'クリアまで約3〜4時間', en: 'About 3–4 hours to clear' },
+    control: { ja: '指を置くだけ（横画面）', en: 'Just rest a finger (landscape)' },
+    devices: ['phone', 'pc'],
+
+    about: {
+      ja: [
+        '森の上に指（マウス）を置くと、そのまわりの「間合い」に入った木が、自動で斬られていきます。制限時間のあいだに木を斬って丸太を集め、製材した板で刀や技を強くして、また森へ。',
+        '強くなるほど森は広がり、新しい木が生え、見たこともないワールドが開いていきます。最後は、森ごと斬り尽くす居合の境地へ。和紙と墨で描いた、落ち着いた見た目のゲームです。'
+      ],
+      en: [
+        'Rest your finger (or mouse) on the forest, and every tree that enters your reach is cut down automatically. Gather logs before time runs out, mill them into planks, sharpen your blade and skills, and head back in.',
+        'The stronger you get, the wider the forest grows — new trees sprout and strange new worlds open up. In the end, you reach the art of cutting down the whole forest at once. Drawn in washi paper and sumi ink.'
+      ]
+    },
+    features: {
+      ja: [
+        '指を置くだけ。間合いの円に入った木が、自動で斬れていく',
+        'ゲージがたまったら「抜刀」。なぞった線の上の木を一度に斬る「大居合」。時を止めて何本も斬る技も',
+        '板でスキルツリーを強化。森が広がり、新しい木が生える（木は12種類）',
+        'ワールドは全12種。それぞれに木を壊してくれる仕掛けがある',
+        '閉じているあいだも、弟子が木を集めてくれる。進み具合は自動で保存',
+        'クリアのあとも、御神木をどこまでも育てられる。日本語と英語'
+      ],
+      en: [
+        'Just rest a finger — every tree inside your circle of reach is cut automatically',
+        'Fill the gauge and draw your sword: trace a line to cut every tree on it at once. Later, stop time and slash again and again',
+        'Upgrade a skill tree with planks. The forest widens and new trees appear (12 kinds)',
+        '12 worlds, each with its own helper that breaks trees for you',
+        'Disciples gather logs even while the game is closed. Progress saves automatically',
+        'After the ending, grow a sacred tree forever. Japanese and English'
+      ]
+    },
+    howto: {
+      ja: [
+        'スマホは横向きにして遊びます。',
+        '森の上に指（マウス）を置くと、まわりの円に入った木が自動で斬られます。指を動かすと円もついてきます。',
+        '時間が来たら集計。丸太が板になります。拠点でスキルを強くして、また森へ。',
+        '右下の「抜刀」のゲージがたまったら押して（PC はスペースキー）、森の上をなぞると、線の上の木を一度に斬ります。',
+        '腕前レベルが上がるとカードを選べます。腕前ポイントで新しいワールドを開きます。',
+        '最後のワールド「宝物殿」の千両箱を開けるとクリアです。'
+      ],
+      en: [
+        'On a phone, play in landscape.',
+        'Rest your finger (or mouse) on the forest. Trees inside the circle around it are cut automatically. Move your finger and the circle follows.',
+        'When time is up, your logs are milled into planks. Upgrade your skills at the base and go back in.',
+        'When the Draw gauge at the bottom right is full, tap it (Space on PC) and trace across the forest to cut every tree on the line.',
+        'Level up to pick cards. Spend skill points to open new worlds.',
+        'Open the giant treasure chest in the last world, the Treasure Vault, to clear the game.'
+      ]
+    },
+    controls: [
+      { what: { ja: '木を斬る', en: 'Cut trees' }, phone: { ja: '森の上に指を置く', en: 'Rest a finger on the forest' }, pc: { ja: 'マウスを森の上に', en: 'Hover the mouse over it' } },
+      { what: { ja: '大居合', en: 'Great Draw' }, phone: { ja: '「抜刀」を押して、なぞる', en: 'Tap "Draw", then trace' }, pc: { ja: 'スペースキーを押して、ドラッグ', en: 'Press Space, then drag' } }
+    ],
+    shots: [
+      { src: 'assets/games/shinra-banzan/title', alt: { ja: 'タイトル', en: 'Title screen' } },
+      { src: 'assets/games/shinra-banzan/forest', alt: { ja: '間合いに入った木が斬れていく', en: 'Trees in reach are cut down' } },
+      { src: 'assets/games/shinra-banzan/iai', alt: { ja: 'なぞって斬る「大居合」', en: 'Tracing a Great Draw' } },
+      { src: 'assets/games/shinra-banzan/stop', alt: { ja: '時を止めて何本も斬る', en: 'Stopping time for many strokes' } },
+      { src: 'assets/games/shinra-banzan/moon', alt: { ja: 'ワールド「月」', en: 'The Moon world' } }
+    ],
+    updates: [
+      { date: '2026-10-20', ja: '公開しました。', en: 'Released.' }
+    ]
+  },
+  {
+    id: 'chalkman',
+    status: 'out',
     title: 'CHALK MAN',
     sub: { ja: 'チョークマン', en: 'Write a word, make it real' },
     genre: { ja: 'ことばパズル', en: 'Word puzzle' },

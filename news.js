@@ -5,6 +5,12 @@
  */
 window.TB_NEWS = [
   {
+    date: '2026-10-20',
+    ja: '10こめの箱「森羅万斬」をならべました！ 指を置くだけで木が斬れていく、墨絵の世界の居合インクリメンタルゲームです。進み具合は自動で保存されるので、ブラウザを閉じても続きから遊べます。',
+    en: 'Box #10 is here: SHINRA BANZAN! An ink-painted incremental game — just rest your finger and the trees fall. Progress saves automatically, so you can close the browser and pick up where you left off.',
+    link: '/games/shinra-banzan/'
+  },
+  {
     date: '2026-10-18',
     ja: '9つめの箱「チョークマン」をならべました！ 書いたことばが、チョークの文字のまま「物」になる、ことばのパズルゲームです。',
     en: 'Box #9 is here: CHALK MAN! A word puzzle game where everything you write becomes a thing — still in chalk letters.',
